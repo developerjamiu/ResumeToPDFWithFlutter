@@ -1,0 +1,37 @@
+name: printing_example
+description: Pdf Printing Example
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pdf: ^1.11.0
+  printing: ^3.6.0
+  path_provider:
+  open_file:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  test:
+
+dependency_overrides:
+  printing:
+    git:
+      url: https://github.com/DavBfr/dart_pdf
+      path: printing
+  pdf:
+    git:
+      url: https://github.com/DavBfr/dart_pdf
+      path: pdf
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
