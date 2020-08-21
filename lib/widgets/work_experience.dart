@@ -30,12 +30,15 @@ class WorkExperience extends pw.StatelessWidget {
               mainAxisSize: pw.MainAxisSize.min,
               crossAxisAlignment: pw.CrossAxisAlignment.start,
               children: [
-                pw.Text(
-                  jobPosition.toUpperCase(),
-                  style: pw.Theme.of(context).defaultTextStyle.copyWith(
-                        fontSize: 12.0,
-                        fontWeight: pw.FontWeight.bold,
-                      ),
+                pw.ClipRect(
+                  child: pw.Text(
+                    jobPosition.toUpperCase(),
+                    tightBounds: true,
+                    style: pw.Theme.of(context).defaultTextStyle.copyWith(
+                          fontSize: 12.0,
+                          fontWeight: pw.FontWeight.bold,
+                        ),
+                  ),
                 ),
                 pw.Text(
                   jobTitle.toUpperCase(),

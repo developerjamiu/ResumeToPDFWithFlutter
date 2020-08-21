@@ -93,7 +93,7 @@ Future<Uint8List> generateResume(PdfPageFormat format) async {
                     SectionTitle('Work Experience'),
                     pw.Padding(padding: pw.EdgeInsets.only(top: 10)),
                     WorkExperience(
-                      jobPosition: 'Assistant Director',
+                      jobPosition: 'AssistantDirectorImage',
                       jobTitle: 'Flutter Developer',
                       jobDate: '2015 - 2019',
                       companyName: 'Ernst and Young',
